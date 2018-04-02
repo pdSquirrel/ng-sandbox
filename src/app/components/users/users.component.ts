@@ -11,6 +11,7 @@ export class UsersComponent implements OnInit {
   showExtended = true;
   loaded = false;
   enableAdd = true;
+  showUserForm: false;
 
   constructor() {}
 
@@ -62,5 +63,10 @@ export class UsersComponent implements OnInit {
 
   addUser(user: User) {
     this.users.push(user);
+  }
+
+  onSubmit(e) {
+    console.log('user');
+    e.preventDefault();
   }
 }
