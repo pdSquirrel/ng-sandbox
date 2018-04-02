@@ -10,12 +10,7 @@ export class UsersComponent implements OnInit {
   user: User = {
     firstName: '',
     lastName: '',
-    age: null,
-    address: {
-      street: '',
-      city: '',
-      state: ''
-    }
+    email: ''
   };
 
   users: User[];
@@ -31,12 +26,7 @@ export class UsersComponent implements OnInit {
       {
         firstName: 'John',
         lastName: 'Doe',
-        age: 70,
-        address: {
-          street: '50 Main st',
-          city: 'Boston',
-          state: 'MA'
-        },
+        email: 'john.doe@yahoo.com',
         isActive: true,
         registered: new Date('01/02/2018 08:30:00'),
         hide: true
@@ -44,12 +34,7 @@ export class UsersComponent implements OnInit {
       {
         firstName: 'Kevin',
         lastName: 'Johnson',
-        age: 34,
-        address: {
-          street: '20 School st',
-          city: 'Lynn',
-          state: 'MA'
-        },
+        email: 'kevin.johnson@hotmail.com',
         isActive: false,
         registered: new Date('03/11/2017 06:20:00'),
         hide: true
@@ -57,12 +42,7 @@ export class UsersComponent implements OnInit {
       {
         firstName: 'Karen',
         lastName: 'Williams',
-        age: 26,
-        address: {
-          street: '55 Mill st',
-          city: 'Miami',
-          state: 'FL'
-        },
+        email: 'karen.williams@gmail.com',
         isActive: true,
         registered: new Date('11/02/2016 10:30:00'),
         hide: true
@@ -71,7 +51,7 @@ export class UsersComponent implements OnInit {
 
     this.loaded = true;
   }
-
+/*
   addUser() {
     this.user.isActive = true;
     this.user.registered = new Date();
@@ -79,15 +59,10 @@ export class UsersComponent implements OnInit {
     this.user = {
       firstName: '',
       lastName: '',
-      age: null,
-      address: {
-        street: '',
-        city: '',
-        state: ''
-      }
+      email: ''
     };
   }
-
+ */
   onSubmit(e) {
     console.log('user');
     e.preventDefault();
