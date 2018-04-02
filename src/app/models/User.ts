@@ -1,10 +1,12 @@
 export default interface User {
-  firstName: String;
-  lastName: String;
-  age: Number;
-  address: {
-    street: String;
-    city: String;
-    state: String;
-  };
+  firstName: string,
+  lastName: string,
+  age?: number,
+  address?: {
+    street?: string,
+    city?: string,
+    state?: string,
+  },
+  isActive?: boolean,
+  registered?: any
 }

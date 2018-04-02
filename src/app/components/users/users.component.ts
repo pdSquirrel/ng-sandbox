@@ -10,59 +10,56 @@ export class UsersComponent implements OnInit {
   users: User[];
   showExtended = true;
   loaded = false;
+  enableAdd = true;
 
   constructor() {}
 
   ngOnInit() {
-    setTimeout(() => {
-      this.users = [
-        {
-          firstName: 'John',
-          lastName: 'Doe',
-          age: 30,
-          address: {
-            street: '50 Main st',
-            city: 'Boston',
-            state: 'MA'
-          }
+    this.users = [
+      {
+        firstName: 'John',
+        lastName: 'Doe',
+        age: 70,
+        address: {
+          street: '50 Main st',
+          city: 'Boston',
+          state: 'MA'
         },
-        {
-          firstName: 'Kevin',
-          lastName: 'Johnson',
-          age: 34,
-          address: {
-            street: '20 School st',
-            city: 'Lynn',
-            state: 'MA'
-          }
+        isActive: true,
+        registered: new Date('01/02/2018 08:30:00')
+      },
+      {
+        firstName: 'Kevin',
+        lastName: 'Johnson',
+        age: 34,
+        address: {
+          street: '20 School st',
+          city: 'Lynn',
+          state: 'MA'
         },
-        {
-          firstName: 'Karen',
-          lastName: 'Williams',
-          age: 26,
-          address: {
-            street: '55 Mill st',
-            city: 'Miami',
-            state: 'FL'
-          }
-        }
-      ];
-      this.loaded = true;
-    }, 2000);
-
-    /*   this.addUser({
-      firstName: 'David',
-      lastName: 'Jackson',
-      age: 44,
-      address: {
-        street: '12 Wake st',
-        city: 'Miami',
-        state: 'FL'
+        isActive: false,
+        registered: new Date('03/11/2017 06:20:00')
+      },
+      {
+        firstName: 'Karen',
+        lastName: 'Williams',
+        age: 26,
+        address: {
+          street: '55 Mill st',
+          city: 'Miami',
+          state: 'FL'
+        },
+        isActive: true,
+        registered: new Date('11/02/2016 10:30:00')
       }
-    }); */
+    ];
+
+    this.loaded = true;
   }
 
   addUser(user: User) {
     this.users.push(user);
   }
+
+
 }
