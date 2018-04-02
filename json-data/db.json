@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@yahoo.com",
+      "isActive": true,
+      "registered": "01/02/2018 08:30:00",
+      "hide": true
+    },
+    {
+      "firstName": "Kevin",
+      "lastName": "Johnson",
+      "email": "kevin.johnson@hotmail.com",
+      "isActive": false,
+      "registered": "03/11/2017 06:20:00",
+      "hide": true
+    },
+    {
+      "firstName": "Karen",
+      "lastName": "Williams",
+      "email": "karen.williams@gmail.com",
+      "isActive": true,
+      "registered": "11/02/2016 10:30:00",
+      "hide": true
+    }
+  ]
+}
